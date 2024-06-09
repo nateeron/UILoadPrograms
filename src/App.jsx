@@ -14,6 +14,9 @@ function App() {
         <p>
          1 askldjalksdjlksadjl
         </p>
+        <p>
+         2 askldjalksdjlksadjl
+        </p>
       </div>
     
     </>
