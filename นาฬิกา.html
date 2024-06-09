@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <style>
+    font.c {
+      font-size: 2000%;
+
+    }
+
+    font.c2 {
+      font-size: 500%;
+
+    }
+
+    div.p {
+      padding-top: 200px;
+    }
+
+    div.p2 {
+      padding-top: 20px;
+    }
+  </style>
+  <script>
+    function startTime() {
+      var today = new Date();
+      var d = today.getDate();
+      var mo = today.getMonth() + 1;
+      var y = today.getFullYear() + 543;
+      var monn = checday(mo);
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+      document.getElementById('txt2').innerHTML =
+        d + " " + monn + " " + y;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+      return i;
+    } function checday(mon) {
+      //มกราคม
+      switch (mon) {
+        case 1:
+          cout = "มกราคม";
+          break;
+        case 2:
+          cout = "กุมภาพันธ์";
+          break;
+        case 3:
+          cout = "มีนาคม";
+          break;
+        case 4:
+          cout = "เมษายน";
+          break;
+        case 5:
+          cout = "พฤษภาคม";
+          break;
+        case 6:
+          cout = "มิถุนายน";
+          break; case 7:
+          cout = "กรกฎาคม";
+          break; case 8:
+          cout = "สิงหาคม";
+          break; case 9:
+          cout = "กันยายน";
+          break;
+        case 10:
+          cout = "ตุลาคม";
+          break;
+        case 11:
+          cout = "พฤศจิกายน";
+          break;
+        case 12:
+          cout = "ธันวาคม";
+          break;
+
+      };
+      return cout;
+    }
+  </script>
+</head>
+<style>
+  .sss {
+    color: #ffffff80;
+    transition: color 0.5s ease-in-out;
+    text-shadow: 0 0 110px rgb(73, 185, 69);
+  }
+
+  .rgb-text {
+    animation: changeColor 2s infinite alternate;
+    transition: color 0.5s ease-in-out;
+    text-shadow: 0 1 1px rgb(255, 247, 247);
+  }
+
+  @keyframes changeColor {
+    0% {
+      color: rgb(163, 59, 59);
+    }
+
+    /* Red */
+    4.7% {
+      color: rgb(194, 115, 63);
+    }
+
+    /* Orange */
+    14.2% {
+      color: rgb(161, 187, 56);
+    }
+
+    /* Lime */
+    19% {
+      color: rgb(128, 190, 87);
+    }
+
+    /* Lime Green */
+    23.8% {
+      color: rgb(86, 196, 86);
+    }
+
+    /* Green */
+    2.5% {
+      color: rgb(74, 190, 121);
+    }
+
+    /* Spring Green */
+    33.3% {
+      color: rgb(98, 204, 183);
+    }
+
+    /* Aqua */
+    38% {
+      color: rgb(70, 175, 175);
+    }
+
+    /* Cyan */
+    42.8% {
+      color: rgb(75, 163, 185);
+    }
+
+    /* Sky Blue */
+    47.6% {
+      color: rgb(84, 108, 145);
+    }
+
+    /* Blue */
+    52.3% {
+      color: rgb(77, 77, 161);
+    }
+
+    /* Blue */
+    57.1% {
+      color: rgb(114, 88, 151);
+    }
+
+    /* Purple */
+    61.88% {
+      color: rgb(204, 0, 255);
+    }
+
+    /* Violet */
+    66.6% {
+      color: rgb(172, 74, 172);
+    }
+
+    /* Magenta */
+    71.4% {
+      color: rgb(155, 114, 147);
+    }
+
+    /* Pink */
+    76.16% {
+      color: rgb(184, 88, 126);
+    }
+
+    /* Hot Pink */
+    80.9% {
+      color: rgb(197, 73, 98);
+    }
+
+    /* Raspberry */
+    85.68% {
+      color: rgb(255, 51, 51);
+    }
+
+    /* Red */
+
+
+  }
+</style>
+
+<body onload="startTime()" style="background-color:#161616;">
+  <div class="p" align="center">
+    <!-- <font  class="c rgb-text" id="txt"  ></font>  -->
+    <font class="c sss" id="txt"></font>
+
+  </div>
+  <div class="p2" align="center">
+
+    <font class="c2 sss" id="txt2"></font>
+  </div>
+
+
+</body>
+
+</html>
