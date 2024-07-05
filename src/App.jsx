@@ -57,7 +57,7 @@ function App() {
   }
 
   return (
-    <div className='con' >
+    <div className='con' >Version 2
     <div >
         <div className="p" align="center">
           <font className="c sss" id="txt">{time}</font>
